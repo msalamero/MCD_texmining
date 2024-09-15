@@ -4,8 +4,10 @@ import matplotlib.pyplot as plt
 from collections import Counter
 
 # Cargar los datos
-df = pd.read_csv('D:/Repos/MCD_Textmining/reviews_final2_3_clas.csv')
-df2 = pd.read_csv('D:/Repos/MCD_Textmining/stream1000.csv') 
+#df = pd.read_csv('D:/Repos/MCD_Textmining/reviews_final2_3_clas.csv')
+#df2 = pd.read_csv('D:/Repos/MCD_Textmining/stream1000.csv') 
+df = pd.read_csv('reviews_final2_3_clas.csv')
+df2 = pd.read_csv('stream1000.csv')  # Make sure this file is in the same directory
 
 # Limpieza de datos
 df['Fecha'] = df['Fecha;;;;'].str.replace(';;;;', '').str.strip()
@@ -58,7 +60,8 @@ if menu == 'Inicio':
     """)
 
     # Agregar una imagen descriptiva para la página de inicio
-    st.image("D:/Repos/MCD_Textmining/images/Xcaret-letras.jpg", use_column_width=True)
+    #st.image("D:/Repos/MCD_Textmining/images/Xcaret-letras.jpg", use_column_width=True)
+    st.image("Xcaret-letras.jpg", use_column_width=True)
 
 # Página de Web Scraping
 elif menu == 'Web Scraping':
