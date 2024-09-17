@@ -49,7 +49,8 @@ if menu == 'Inicio':
     st.title('Análisis de Reseñas Tripadvisor - Parque Xcaret')
 
     st.image("Beneficios del Sistema.png", use_column_width=True)
-    
+    st.image("Diagrama del Proceso.png", use_column_width=True)
+
     st.markdown("""
     ## Descripción General
     Este proyecto está diseñado para analizar reseñas de productos mediante varias etapas:
