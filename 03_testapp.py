@@ -221,13 +221,13 @@ elif menu == 'Limpieza de Datos':
 elif menu == 'Análisis de Sentimientos':
     st.header('Análisis de Sentimientos API de OpenAI')
     st.markdown("""
-    El análisis de sentimientos es una técnica de procesamiento de lenguaje natural que clasifica las opiniones en **positivas**, **negativas** o **neutras**.
+        El análisis de sentimientos es una técnica de procesamiento de lenguaje natural que clasifica las opiniones en **positivas**, **negativas** o **neutras**.
     """)
     st.subheader('Costo de uso de OpenIA')
     st.image("costoAPI.png", use_column_width=True)
 
-st.markdown("""
- Implementación del análisis de sentimientos:
+    st.markdown("""
+         Implementación del análisis de sentimientos:
 
 1.	Envío de las reseñas al asistente de OpenAI: El script utiliza la función submit_message para enviar el texto de cada reseña al asistente de OpenAI, solicitando su análisis de sentimientos. El texto de la reseña se extrae de un archivo CSV y se convierte en un mensaje que se envía a través de la API. Se inicia un hilo para cada mensaje, lo que permite procesar las respuestas de forma estructurada.
 2.	Espera y recuperación de resultados: Una vez que el mensaje ha sido enviado, la función wait_on_run verifica el estado del análisis de la reseña, esperando hasta que el asistente haya completado la tarea. Esta función asegura que el script no continúe hasta que el análisis esté finalizado. Después de completarse el análisis, el script recupera los mensajes de respuesta del asistente.
