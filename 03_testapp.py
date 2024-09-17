@@ -222,7 +222,10 @@ elif menu == 'Análisis de Sentimientos':
     st.header('Análisis de Sentimientos API de OpenAI')
     st.markdown("""
     El análisis de sentimientos es una técnica de procesamiento de lenguaje natural que clasifica las opiniones en **positivas**, **negativas** o **neutras**.
-   
+
+    st.subheader(""" Costo de uso de OpenIA""")
+    st.image("costoAPI.png", use_column_width=True)
+
 
  Implementación del análisis de sentimientos:
 
